@@ -23,6 +23,8 @@ pip3 install virtualenv
 cd fib-sequence-generator
 virtualenv -p python3 venv
 source venv/bin/activate
+export FLASK_APP=fib-sequence-generator.py
+export FLASK_DEBUG=1
 ```
 
 To deactivate
