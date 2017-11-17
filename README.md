@@ -7,16 +7,12 @@ Web interface for generating Fibonacci number sequences
 
 ### Deployment
 
-Docker deployment:
+Docker build and run:
 
 ```
 docker build -t fib-sequence-generator .
 docker run -d -p 80:80 fib-sequence-generator
 ```
-
-### Testing
-
-- [Travis.ci - fib-sequence-generator](https://travis-ci.org/sepulworld/fib-sequence-generator)
 
 ### Local install MacOS, Non-Docker
 
@@ -40,6 +36,10 @@ deactivate
 ### Requirements
 
 * Python3
+
+### Testing
+
+- [Travis.ci - fib-sequence-generator](https://travis-ci.org/sepulworld/fib-sequence-generator)
 
 #### Thanks
 
