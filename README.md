@@ -42,3 +42,7 @@ deactivate
 ### Requirements
 
 * Python3
+
+#### Thanks
+
+Leveraging [tiangolo/uwsgi-nginx-flask-docker image](https://github.com/tiangolo/uwsgi-nginx-flask-docker)
