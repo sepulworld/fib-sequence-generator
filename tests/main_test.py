@@ -2,6 +2,7 @@ import unittest
 import tempfile
 import os
 import sys
+sys.path.insert(0, './fib-sequence-generator/')
 import main as fib_seq
 
 class TestFibSequence(unittest.TestCase):

@@ -3,6 +3,6 @@ python:
   - "3.6"
 
 install:
-  - pip install -r app/requirements.txt
+  - pip install -r fib-sequence-generator/requirements.txt
 
-script: python app/main_test.py
+script: python tests/main_test.py

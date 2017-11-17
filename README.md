@@ -19,9 +19,10 @@ docker run -d -p 80:80 fib-sequence-generator
 ```
 brew install python3
 pip3 install virtualenv
-cd fib-sequence-generator/app
+cd fib-sequence-generator/fib-sequence-generator
 virtualenv -p python3 venv
 source venv/bin/activate
+pip install -r requirements.txt
 export FLASK_APP=main.py
 export FLASK_DEBUG=1
 python -m flask run
