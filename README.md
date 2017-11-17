@@ -3,8 +3,7 @@
 
 Web interface for generating Fibonacci number sequences
 
-Todo:
-- Screen shots
+![fib-seq-gif](https://user-images.githubusercontent.com/538171/32931738-b2dd7260-cb1a-11e7-8b43-adaa0821361e.gif)
 
 ### Deployment
 
