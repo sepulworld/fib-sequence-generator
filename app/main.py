@@ -16,8 +16,10 @@ def fib_generator_page():
 
     try:
         fib_max_number = int(request.args.get('fib-max-number'))
-    except ValueError as e:
-        return render_template('error_page.html', error=e)
+    except ValueError:
+        return render_template(
+            'error_page.html',
+            error="Not an integer! '{}'".format(fib_max_number))
 
     if fib_max_number > 0:
         fib_list = [n for n in _fibonacci(fib_max_number)]
