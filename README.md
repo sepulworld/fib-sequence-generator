@@ -1,5 +1,6 @@
 # fib-sequence-generator
 [![Build Status](https://travis-ci.org/sepulworld/fib-sequence-generator.svg)](https://travis-ci.org/sepulworld/fib-sequence-generator)
+
 Web interface for generating Fibonacci number sequences
 
 Todo:
