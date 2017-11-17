@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/sepulworld/fib-sequence-generator.svg)](https://travis-ci.org/sepulworld/fib-sequence-generator)
 [![Docker](https://images.microbadger.com/badges/image/sepulworld/fib-sequence-generator.svg)](https://microbadger.com/images/sepulworld/fib-sequence-generator)
 
-Web interface for generating Fibonacci number sequences
+Web interface for generating [Fibonacci number sequences](https://www.mathsisfun.com/numbers/fibonacci-sequence.html)
 
 ![fib-seq-gif](https://user-images.githubusercontent.com/538171/32931738-b2dd7260-cb1a-11e7-8b43-adaa0821361e.gif)
 
