@@ -16,7 +16,6 @@ docker run -d -p 80:80 fib-sequence-generator
 ### Testing
 
 Todo:
-- unittest  
 - loop into Travis.ci
 
 ### Local install MacOS, Non-Docker
