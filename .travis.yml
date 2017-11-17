@@ -5,4 +5,4 @@ python:
 install:
   - pip install -r app/requirements.txt
 
-script: python app/test.py
+script: python app/main_test.py
