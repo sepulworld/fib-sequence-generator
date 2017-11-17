@@ -35,7 +35,6 @@ python -m flask run
 To deactivate
 
 ```
-cd fib-sequence-generator
 deactivate
 ```
 
