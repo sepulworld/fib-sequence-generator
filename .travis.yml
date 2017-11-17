@@ -6,3 +6,13 @@ install:
   - pip install -r fib-sequence-generator/requirements.txt
 
 script: python tests/main_test.py
+
+jobs:
+  include:
+    - stage: build docker image
+      script:
+      - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+      - docker build -t fib-sequence-generator .
+      - docker images
+      - docker tag fib-sequence-generator $DOCKER_USERNAME/fib-sequence-generator
+      - docker push $DOCKER_USERNAME/fib-sequence-generator
