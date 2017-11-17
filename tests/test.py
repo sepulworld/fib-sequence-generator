@@ -1,6 +1,6 @@
 import unittest
 import sys
-sys.path.insert(0, '../app/')
+sys.path.insert(0, './app/')
 import main as fib_seq
 
 class TestFibSequence(unittest.TestCase):
