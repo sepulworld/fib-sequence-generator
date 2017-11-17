@@ -22,7 +22,9 @@ def fib_generator_page():
     if fib_max_number > 0:
         fib_list = [n for n in _fibonacci(fib_max_number)]
         return render_template('fib_generator.html',
-                               error=error, fib_sequence=fib_list)
+                               error=error,
+                               fib_sequence=fib_list,
+                               fib_max_number=fib_max_number)
     else:
         error = "Must provide a number greater than 0"
         response = make_response(
