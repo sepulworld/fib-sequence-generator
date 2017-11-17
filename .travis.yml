@@ -16,3 +16,4 @@ jobs:
       - docker images
       - docker tag fib-sequence-generator $DOCKER_USERNAME/fib-sequence-generator
       - docker push $DOCKER_USERNAME/fib-sequence-generator
+      - curl -d -X https://hooks.microbadger.com/images/sepulworld/fib-sequence-generator/KKuw_MhFkRqDrKrem_-zzFzpWoE=
