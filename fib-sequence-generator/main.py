@@ -4,10 +4,16 @@ app = Flask(__name__)
 
 @app.route('/')
 def index_page():
+    """Generate index page which will display
+    an input for fib sequence generator
+    """
     return render_template('index.html')
 
 @app.route('/fib-generator', methods=['GET'])
 def fib_generator_page():
+    """Generate a page that displays results of provided 'fib-max-number'
+    from the index page
+    """
     error = None
     fib_max_number = request.args.get('fib-max-number')
 
@@ -37,9 +43,16 @@ def fib_generator_page():
 
 @app.errorhandler(404)
 def not_found(error):
+    """Render an error page. Used when a non-integer or a number equal to or
+    less than zero is inputted
+    """
     return render_template('error_page.html'), 404
 
 def _fibonacci(fib_max_number):
+    """Calculate the Fibonacci sequence up to the given fib_max_number vaule
+    the yeild of x is the next number in ths loop that is the addition of the 2
+    previous numbers
+    """
     x, y = 0, 1
     while x < fib_max_number:
         yield x
